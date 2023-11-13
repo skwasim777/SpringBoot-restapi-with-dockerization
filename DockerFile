@@ -1,0 +1,4 @@
+FROM openjdk:11
+COPY target/Sb-App.jar /usr/app/
+WORKDIR /usr/app/
+ENTRYPOINT [ "java","-jar","Sb-App.jar"]
